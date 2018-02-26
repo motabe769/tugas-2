@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script>window.sr = ScrollReveal();</script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title></title>
+    <style>
+        * 
+        {
+            box-sizing: border-box;
+        }
+
+        body 
+        {
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+            background: black;
+        }
+
+        #myVideo 
+        {
+            position: fixed;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1;
+            background-size: cover;
+        }
+        .content 
+        {
+            position: fixed;
+            bottom: 0;
+            margin-left:-60px; 
+            background: rgba(0, 0, 0, 0.9);
+            color: pink;
+            width: 40%;
+            height: 100%;
+            padding: 20px;
+            transform: skewX(-9deg);
+            text-align:center;
+        }
+        .social
+        {
+            float:right;
+            margin-top: 500px;
+            margin-right: 10px;
+        }
+        .social li 
+        {
+            list-style: none;
+        }
+        .social li a
+        {
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+        }
+        .social li a:hover
+        {
+            color: rgb(9, 9, 9);
+        }
+    </style>
+</head>
+<body>    
+    <video autoplay muted loop id="myVideo">
+        <source src="trailer_480p.mp4" type="video/mp4">
+    </video>
+      
+    <div class="content">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+    </div>
+    <ul class="social">
+            <li><a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube-square" style="background:darkred" ></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin" style="background:crimson"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" style="background:brown"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" style="background:lightskyblue"></i></a></li>        
+    </ul>
+      
+</body>
+</html>
